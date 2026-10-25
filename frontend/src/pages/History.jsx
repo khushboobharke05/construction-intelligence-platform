@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { History, Filter, RefreshCw, Trash2, Search, ExternalLink, Image as ImageIcon, Eye, Code2 } from 'lucide-react';
-import { historyAPI } from '../api/client';
+import { historyAPI, BASE_URL } from '../api/client';
 import toast from 'react-hot-toast';
-
-const BASE_URL = 'http://localhost:8000';
 
 const MODULE_LABELS = {
   safety: { label: 'Safety Monitor', icon: '🦺', color: '#f87171' },
